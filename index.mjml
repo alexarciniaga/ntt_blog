@@ -31,6 +31,11 @@
         margin: 0;
         color: #ffffff;
       }
+      a {
+        color:inherit;
+        font-size:inherit;
+        text-decoration:underline
+      }
 
       .subhead {
         font-family: 'Roboto', sans-serif;
@@ -53,7 +58,7 @@
         line-height: 1;
         letter-spacing: normal;
         text-align: center;
-        color: var(--blue);
+        color: #0033cc;
       }
 
       button {
@@ -90,7 +95,7 @@
         font-style: normal;
         line-height: 1.5;
         letter-spacing: normal;
-        color: var(--black);
+        color: #000000;
       }
 
       .p-mute {
@@ -102,7 +107,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: var(--brown-grey);
+        color: #919191;
       }
     </mj-style>
     <mj-attributes>
@@ -113,20 +118,20 @@
     <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,900,900i&display=swap" />
 
   </mj-head>
-  <mj-body>
+  <mj-body background-color="#f4f4f4">
   <mj-wrapper padding="0px 16px" background-color="#f4f4f4">
     <mj-section background-color="#f4f4f4" padding="16px 16px">
       <mj-column width="50%">
-        <mj-image src="./assets/ntt-logo-blue-mark@2x.png"  css-class="textcenter" height="49px" align="left" width="134px" alt="ntt-logo" />
+        <mj-image src="http://info.ragingwire.com/rs/265-FHK-559/images/ntt-logo-blue-mark%402x.png" href="${logourl}" css-class="textcenter" height="49px" align="left" width="134px" alt="ntt-logo" />
       </mj-column>
       <mj-column width="50%">
         <mj-text font-family="'Roboto', sans-serif;" css-class="textcenter" font-size="16px" align="right" line-height="49px" text-decoration="underline" color="#919191">
-          View in Browser
+          <a href="{{system.viewAsWebpageLink}}">View in Browser</a>
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-hero mode="fixed-height" height="414px" background-width="568px" background-height="416px" background-url="./assets/gradient.gif" background-color="#f4f4f4" padding="0px 48px">
-      <mj-image padding-top="24px" src="./assets/globe.gif" alt="globe" width="70px" height="70px" />
+    <mj-hero mode="fixed-height" height="414px" background-width="568px" background-height="416px" background-url="http://info.ragingwire.com/rs/265-FHK-559/images/gradient%402x.jpg" background-color="#2300cc" padding="0px 48px">
+      <mj-image padding-top="24px" src="http://info.ragingwire.com/rs/265-FHK-559/images/globe.gif" alt="globe" width="70px" height="70px" />
       <mj-text padding-bottom="8px" padding-top="24px"  >
         <h1>Dallas</h1>
       </mj-text>
@@ -136,7 +141,7 @@
       <mj-text padding-bottom="24px"  >
         <h2>See why Dallas DC market can help you extend your reach and maximize revenue</h2>
       </mj-text>
-      <mj-button font-family="'Roboto',sans-serif" width="83%" height="48px" font-size="18px" background-color="#fff" border-radius="1px" color="#0033cc" href="#" align="center">
+      <mj-button font-family="'Roboto',sans-serif" width="100%" height="48px" font-size="18px" background-color="#fff" border-radius="1px" color="#0033cc" href="#" align="center">
         Read the article
       </mj-button>
     </mj-hero>
@@ -148,25 +153,25 @@
         <mj-text padding-bottom="24px"  >
           <p>These hyperscalers see Dallas data centers as enablers of their business strategies. Read this to find out why you should too.</p>
         </mj-text>
-        <mj-button font-family="'Roboto',sans-serif" width="83%" height="48px" font-size="18px" background-color="#0033cc" padding-bottom="24px" border-radius="1px" color="#fff" href="#" align="center">
+        <mj-button font-family="'Roboto',sans-serif" width="100%" height="48px" font-size="18px" background-color="#0033cc" padding-bottom="24px" border-radius="1px" color="#fff" href="#" align="center">
           Read the article
         </mj-button>
-        <mj-text  >
+        <mj-text>
           <p>If you are ready to see our award-winning data center in Dallas, schedule a tour today.</p>
         </mj-text>
-
       </mj-column>
     </mj-section>
     
   </mj-wrapper>
+  <mj-wrapper padding="0px 16px" background-color="#f4f4f4">
     <mj-section background-color="#f4f4f4" padding-top="16px" padding-bottom="16px">
-      <mj-column width="100%">
+      <mj-column>
         <mj-text align="center" font-family="'Roboto', sans-serif" font-size="16px" color="#919191" line-height="19px" padding-bottom="8px">
           NTT Dallas TX 1<br>
           2008 Lookout Dr, Garland, TX 75044
         </mj-text>
         <mj-text align="center" font-family="'Roboto', sans-serif" font-size="16px" color="#919191" line-height="1.44" text-decoration="underline">
-          Contact Us
+          <a href="https://www.ntt.com/en/index.html">Contact Us</a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -193,7 +198,7 @@
       </mj-column>
       <mj-column>
         <mj-text align="center" font-family="'Roboto', sans-serif" line-height="1.44" font-size="16px"  color="#919191">
-          Unsubscribe
+          <a href="{{system.unsubscribeLink}}">Unsubscribe</a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -204,5 +209,6 @@
         </mj-text>
       </mj-column>
     </mj-section>
+  </mj-wrapper>
   </mj-body>
 </mjml>
